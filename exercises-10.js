@@ -7,7 +7,6 @@ function perkalianUnik(arr) {
             if (i!=j) {
                 num*=arr[j];
             }
-            
         }
         arrayNum.push(num);
     }
