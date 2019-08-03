@@ -1,7 +1,7 @@
 function tentukanDeretAritmatika(arr) {
     // you can only write your code here!
-    for (var i=0; i<arr.length; i++) {
-        cek=arr[1]-arr[0]==arr[i]-arr[i-1]
+    for (var i=1; i<arr.length-1; i++) {
+        cek=arr[1]-arr[0]==arr[i+1]-arr[i]
     }
     return cek
   }
