@@ -16,7 +16,7 @@ function groupAnimals(animals) {
     }
     arrAnimal.push(arrayKelompok);
     return arrAnimal;
-  
+}
   // TEST CASES
   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
   // [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
