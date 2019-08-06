@@ -7,12 +7,12 @@ function pasanganTerbesar(num) {
         j++
         arrayString+=numToString[i]
         arrayString+=numToString[j]
-        arrayString1=arrayString+='-'
+        arrayString1=arrayString+='-' //penambahan karakter '-' ke setiap pasangan angka. misal 64-41-15-57-73-30-00-
     }
-    var pairNum = arrayString.split('-');
-    pairNum.pop()
-    pairNum.sort(function(a,b){return b-a});
-    return Number(pairNum[0]); 
+    var pairNum = arrayString.split('-'); //merubah string menjadi array dengan karakter '-' sebagai pembatas ['64',41','15','57','73','30','00','']
+    pairNum.pop() //menghapus indeks terakhir dari array ['64',41','15','57','73','30','00']
+    pairNum.sort(function(a,b){return b-a}); //mengurutkan secara descending ['73',64','57','41','30','15','00']
+    return Number(pairNum[0]); //mengembalikan isi dari array dengan indexs ke 0 setelah di urutkan yaitu 73
   }
   
   // TEST CASES
