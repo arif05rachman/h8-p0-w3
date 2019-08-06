@@ -1,7 +1,10 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    for (var i=1; i<arr.length-1; i++) {
-        cek=arr[1]/arr[0]==arr[i+1]/arr[i]
+    var cek = true
+    for (var i=0; i<arr.length-1; i++) {
+        if(arr[1]/arr[0]!==arr[i+1]/arr[i]){
+            cek = false
+        }
     }
     return cek
   }
@@ -12,3 +15,4 @@ function tentukanDeretGeometri(arr) {
   console.log(tentukanDeretGeometri([2, 4, 6, 8])); // false
   console.log(tentukanDeretGeometri([2, 6, 18, 54])); // true
   console.log(tentukanDeretGeometri([1, 2, 3, 4, 7, 9])); // false
+  console.log(tentukanDeretGeometri([1, 3, 4, 12])); // false
