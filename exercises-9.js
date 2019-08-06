@@ -1,10 +1,10 @@
 function cariMean(arr) {
     // you can only write your code here!
     var jumlah =0;
-    for(i=0; i<arr.length;i++){
+    for(var i=0; i<arr.length;i++){
         jumlah += arr[i]
     }
-    mean = jumlah/arr.length
+    var mean = jumlah/arr.length    //deklarasi mean = jumlah angka yang ada didalam array dibagi panjang array
     return Math.round(mean)
   }
   
