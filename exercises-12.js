@@ -1,9 +1,9 @@
 function tentukanDeretGeometri(arr) {
     // you can only write your code here!
-    var cek = true
+    var cek = true //set cek true terlebih dahulu
     for (var i=0; i<arr.length-1; i++) {
-        if(arr[1]/arr[0]!==arr[i+1]/arr[i]){
-            cek = false
+        if(arr[1]/arr[0]!==arr[i+1]/arr[i]){ 
+            cek = false //ketika salahsatu selilih antar angka berbdea rubah cek menjadi false
         }
     }
     return cek
