@@ -7,7 +7,7 @@ function pasanganTerbesar(num) {
         j++
         arrayString+=numToString[i]
         arrayString+=numToString[j]
-        arrayString1=arrayString+='-' //penambahan karakter '-' ke setiap pasangan angka. misal 64-41-15-57-73-30-00-
+        arrayString+='-' //penambahan karakter '-' ke setiap pasangan angka. misal 64-41-15-57-73-30-00-
     }
     var pairNum = arrayString.split('-'); //merubah string menjadi array dengan karakter '-' sebagai pembatas antar value ['64',41','15','57','73','30','00','']
     pairNum.pop() //menghapus indeks terakhir dari array ['64',41','15','57','73','30','00']
